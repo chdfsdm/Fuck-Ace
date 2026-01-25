@@ -19,6 +19,7 @@
         将代码打包成程序，程序复制到开机自启动文件夹里面，然后管理员运行一次。
         在任务管理器里面能找到跟文件名一样的程序就算成功。
 
+本人运行多款游戏，包括三角洲，瓦洛兰特，LOL等，均未被警告，不必担心封号问题。
 
 
 
@@ -48,3 +49,5 @@ Usage:
         2. Copy the program into your Startup folder.
         3. Run it once as Administrator.
         4. Verification: You can check Task Manager; if you see a process with the same name as the file, it means it's running successfully.
+
+I have tested this with several games (including Delta Force, Valorant, and League of Legends) and have not been flagged or warned. The risk of account suspension is negligible.
