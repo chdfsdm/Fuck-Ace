@@ -25,7 +25,7 @@
 
 
 
-#英文注解
+# 英文注解
 # Fuck-Ace (Fk You ACE)
 The main purpose of this project is to apply "debuffs" (penalties) to the anticheat executable files starting with "ACE" from a certain Penguin Company——Tencent.
 
