@@ -18,3 +18,27 @@
 
         将代码打包成程序，程序复制到开机自启动文件夹里面，然后管理员运行一次。
         在任务管理器里面能找到跟文件名一样的程序就算成功。
+
+
+# Fuck-Ace (Fk You ACE)
+The main purpose of this project is to apply "debuffs" (penalties) to the anticheat executable files starting with "ACE" from a certain Penguin Company——Tencent.
+
+Features include:
+
+         CPU Priority: Set to "Below Normal".
+         CPU Affinity: Bitmask set to F00000 (Hexadecimal).
+         I/O Priority: Set to "Low".
+         GPU Priority: Set to "Below Normal".
+         Power Mode: Enables "Efficiency Mode" for the process.
+        
+The program scans every 30 seconds and runs automatically in the background. It is compatible with multiple modes and prevents duplicate startups.
+The settings are kept conservative to prevent the game from crashing or freezing. You can adjust them manually if needed.
+
+Known Defects:This may cause "friendly fire" (collateral damage) to other legitimate processes starting with "ace". However, the author hasn't encountered any such programs before.
+
+Usage:
+
+        1. Compile the code into an executable.
+        2. Copy the program into your Startup folder.
+        3. Run it once as Administrator.
+        4. Verification: You can check Task Manager; if you see a process with the same name as the file, it means it's running successfully.
