@@ -4,7 +4,7 @@ import ctypes.wintypes
 from threading import Event
 import sys
 
-# -------------------------- 全局配置（精简） --------------------------
+# -------------------------- 全局配置 --------------------------
 CHECK_INTERVAL = 30  # 检测间隔（秒）
 CPU_AFFINITY_MASK = 0xF00000  # 十六进制F00000，对应CPU核心20-23
 PROCESS_ALL_ACCESS = 0x1F0FFF
@@ -13,7 +13,7 @@ IO_PRIORITY_LOW = 0x00000001
 GPU_PRIORITY_BELOW_NORMAL = 0x00000001
 PROCESS_POWER_THROTTLING_EFFICIENCY_MODE = 0x00000002
 
-# -------------------------- 单例模式（防止重复启动，精简实现） --------------------------
+# -------------------------- 单例模式（防止重复启动） --------------------------
 def is_single_instance():
     try:
         mutex_name = "Global\\AcePrefixProcessSetter_Singleton_Mutex"
@@ -22,7 +22,7 @@ def is_single_instance():
     except:
         return False
 
-# -------------------------- 进程属性设置（整合精简，无冗余） --------------------------
+# -------------------------- 进程属性设置 --------------------------
 def set_process_all_attributes(pid):
     """统一设置单个进程的所有目标属性，静默执行"""
     try:
@@ -71,7 +71,7 @@ def set_process_all_attributes(pid):
     except:
         pass  # 静默忽略所有错误，不生成日志
 
-# -------------------------- 核心检测逻辑（精简，前缀模糊匹配） --------------------------
+# -------------------------- 核心检测逻辑（前缀模糊匹配） --------------------------
 def monitor_and_set_processes():
     """每30秒检测所有Ace开头进程，设置属性"""
     stop_event = Event()
@@ -90,7 +90,7 @@ def monitor_and_set_processes():
             stop_event.wait(CHECK_INTERVAL)
             continue
 
-# -------------------------- 程序入口（精简无冗余） --------------------------
+# -------------------------- 程序入口 --------------------------
 if __name__ == "__main__":
     if not is_single_instance():
         sys.exit(0)
