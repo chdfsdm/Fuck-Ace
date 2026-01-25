@@ -1,4 +1,4 @@
-# Fuck-Ace（ACE 我C尼玛）
+# Fuck-Ace（ACE反作弊系统）
 这个项目主要目的是给某企鹅公司底下以ACE为开头的反作弊运行文件上debuff。
 
 包含有：
